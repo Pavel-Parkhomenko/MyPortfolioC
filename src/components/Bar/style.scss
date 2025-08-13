@@ -1,0 +1,22 @@
+.box-bar {
+  .text {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	.bar-long {
+		width: 100%;
+		height: 30px;
+		background-color: aquamarine;
+		position: relative;
+
+		.bar-short {
+			position: absolute;
+			background-color: red;
+			width: 99%;
+			height: 30px;
+			left: 0;
+		}
+	}
+}

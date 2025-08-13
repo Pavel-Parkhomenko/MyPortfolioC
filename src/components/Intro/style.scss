@@ -1,0 +1,22 @@
+.box-intro {
+  background-color: black;
+	width: 100%;
+	height: 100vh;
+
+	.box-text {
+		width: 100%;
+		height: 100vh;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.p1 {
+			font-size: 200px;
+		}
+
+		.p2 {
+			font-size: 20px;
+		}
+	}
+}

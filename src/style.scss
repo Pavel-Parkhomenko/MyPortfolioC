@@ -1,0 +1,25 @@
+.container-info {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.container-info-into {
+		box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+		display: flex;
+		padding: 20px;
+		flex-direction: row;
+		width: 60%;
+		margin-top: 50px;
+		padding-top: 100px;
+
+		.container-bar {
+			width: calc(50% - 20px);
+			display: flex;
+			flex-direction: column;
+			margin-right: 20px;
+		}
+	}
+
+}
