@@ -1,27 +1,24 @@
 import { About } from './components/About/About.jsx'
 import { Intro } from './components/Intro/Intro.jsx'
 import { Contact } from './components/Contact/Contact.jsx'
-import { Bar } from './components/Bar/Bar.jsx'
 import { Portfolio } from './components/Portfolio/Portfolio.jsx'
 import './style.scss'
+import { Header } from './components/Header/Header.jsx'
 
 function App() {
   return (
     <div>
+      <Header />
       <Intro />
       <div className='container-info'>
-        <div className='container-info-into'>
-          <div className='container-bar'>
-            <Bar wBar={80}/>
-            <Bar wBar={50}/>
-            <Bar wBar={70}/>
-            <Bar wBar={20}/>
-            <Bar wBar={30}/>
-            <Bar wBar={100}/>
-          </div>
+        <div className='container-about'>
           <About />
         </div>
         <Portfolio />
+        <div className='container-contact'>
+          <div className='container-contact-into'/>
+          <Contact />
+        </div>
       </div>
     </div>
   );

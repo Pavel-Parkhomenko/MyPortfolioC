@@ -1,9 +1,43 @@
 .box-about {
-  width: 50%;
-  position: relative;
+//   width: 50%;
+//   position: relative;
 
-  h2 {
-    position: absolute;
-    top: -50px;
-  }
+//   h2 {
+//     position: absolute;
+//     top: -50px;
+//   }
+
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+	padding: 20px;
+	width: 100%;
+	margin-top: 50px;
+	padding-top: 100px;
+	position: relative;
+
+	.bars {
+		width: calc(50% - 20px);
+		display: flex;
+		flex-direction: column;
+		margin-right: 20px;
+	}
+
+	.text {
+		width: calc(50% - 20px);
+		position: relative;
+
+		> div {
+			position: absolute;
+			top: -40px;
+
+			> h2 {
+				font-size: 30px;
+			}
+		}
+
+		> p {
+			margin-top: 40px;
+		}
+	}
 }

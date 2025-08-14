@@ -1,0 +1,15 @@
+.box-header {
+    position: sticky;
+    top: 0;
+    background-color: inherit;
+    width: 100%;
+    height: 80px;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+    color: red;
+
+    &.scrolled {
+        background-color: white;
+        height: 60px;
+    }
+}

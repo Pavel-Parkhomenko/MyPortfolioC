@@ -5,9 +5,9 @@ export function Bar({ wBar }) {
   return(
     <div className="box-bar">
 
-      <div className="text">
-        <p>Aaaa</p>
-        <p>{wBar}%</p>
+      <div className="text-bar">
+        <span>Aaaa</span>
+        <span>{wBar}%</span>
       </div>
 
       <div className="bar-long">
