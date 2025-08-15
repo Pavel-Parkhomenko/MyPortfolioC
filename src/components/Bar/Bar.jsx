@@ -1,12 +1,12 @@
 import React from 'react'
 import './style.scss'
 
-export function Bar({ wBar }) {
+export function Bar({ text, wBar }) {
   return(
     <div className="box-bar">
 
       <div className="text-bar">
-        <span>Aaaa</span>
+        <span>{text}</span>
         <span>{wBar}%</span>
       </div>
 

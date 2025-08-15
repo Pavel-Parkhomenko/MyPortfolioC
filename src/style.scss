@@ -1,3 +1,5 @@
+@use 'src/variables' as *;
+
 .container-info {
 	position: relative;
 	display: flex;
@@ -33,6 +35,18 @@
 	}
 }
 
-.container-about {
+.wrapper {
 	width: 60%;
+
+	@media (max-width: $br-lg) {
+    	width: 70%;
+	}
+
+	@media (max-width: $br-md) {
+    	width: 80%;
+	}
+
+	@media (max-width: $br-sm) {
+    	width: 90%;
+	}
 }

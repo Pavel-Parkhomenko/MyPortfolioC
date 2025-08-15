@@ -1,58 +1,65 @@
 import React from 'react'
 import './style.scss'
-import IMG from '../../img.jpg'
 import { HLine } from '../HLine/HLine.jsx'
 import GIT_ICON from '../../img/icon-git.svg'
 
 const data = [
 	{
 		id: 1,
-		img: 'img',
-		descr: "aaa a aaaaaaaaaaaaaa aaaaa aaa aa a a aa a aaaaaaa a aa a a a aa a a a a a ",
-		stack: ["C++", "QT"],
-		summary: 'Bbbb bbbb b'
+		img: '/img/works/activation-linux.png',
+		descr: "Сообщение о том, что вам необходимо активировать Linux.",
+		stack: ["C++", "QT", "Linux"],
+		summary: 'Activation Linux',
+		gh: "https://github.com/Pavel-Parkhomenko/ActivationLinuxTitle",
 	},
 	{
 		id: 2,
-		img: 'img',
+		img: '/img/works/crypto.png',
 		descr: "aaa a aaaaaaaaaaaaaa aaaaa aaa aa a a aa a aaaaaaa a aa a a a aa a a a a a ",
-		stack: ["C++", "QT"],
-		summary: 'Bbbb bbbb b'
+		stack: ["JavaScript", "React", "API", "WEB"],
+		summary: 'Crypto Tracker',
+		gh: "https://github.com/Pavel-Parkhomenko/crypto-tracker",
 	},
 	{
 		id: 3,
-		img: 'img',
-		descr: "aaa a aaaaaaaaaaaaaa aaaaa aaa aa a a aa a aaaaaaa a aa a a a aa a a a a a ",
-		stack: ["C++", "QT"],
-		summary: 'Bbbb bbbb b'
-	},
-	{
-		id: 4,
-		img: 'img',
-		descr: "aaa a aaaaaaaaaaaaaa aaaaa aaa aa a a aa a aaaaaaa a aa a a a aa a a a a a ",
-		stack: ["C++", "QT"],
-		summary: 'Bbbb bbbb b'
+		img: '/img/works/desktop_icon_game.png',
+		descr: "Мини-игра, в которой вам нужно будет вернуть значки на рабочем столе в их первоначальное положение.",
+		stack: ["C++", "QT", "Linux"],
+		summary: 'Desktop Icon Game',
+		gh: "https://github.com/Pavel-Parkhomenko/DekstopIconGame",
 	},
 	{
 		id: 5,
-		img: 'img',
-		descr: "aaa a aaaaaaaaaaaaaa aaaaa aaa aa a a aa a aaaaaaa a aa a a a aa a a a a a ",
-		stack: ["C++", "QT"],
-		summary: 'Bbbb bbbb b'
+		img: '/img/works/transcendental_equation.png',
+		descr: "Данное приложение позволяет решать трансцендентные уравнения на заданном диапазоне данных.",
+		stack: ["C++", "C#", "Chart", "Assembler", "DLL"],
+		summary: 'Transcendental Equation',
+		gh: "https://github.com/Pavel-Parkhomenko/Transcendental-Equations",
 	},
 	{
 		id: 6,
-		img: 'img',
-		descr: "aaa a aaaaaaaaaaaaaa aaaaa aaa aa a a aa a aaaaaaa a aa a a a aa a a a a a ",
-		stack: ["C++", "QT"],
-		summary: 'Bbbb bbbb b'
+		img: '/img/works/tree_app.png',
+		descr: "В этом приложении вы можете создать, отобразить и выполнить некоторые операции над двоичном дереве.",
+		stack: ["C++", "QT", "Linux/Windows"],
+		summary: 'Tree App',
+		gh: "https://github.com/Pavel-Parkhomenko/GIT-WORK/tree/main/treeapp",
+	},
+	{
+		id: 7,
+		img: '/img/works/star-wars.png',
+		descr: "Вы печаете текст, а он очень сильно хочет быть похожим на титры Star Wars.",
+		stack: ["C++", "QT", "Linux/Windows"],
+		summary: 'Star Wars',
+		gh: "https://github.com/Pavel-Parkhomenko/StarWarsText",
 	}
 ]
 
-function Card({ img, summary, stack, descr }) {
+function Card({ img, summary, stack, descr, gh }) {
 	return (
 		<div className="card">
-			<img src={IMG} alt={summary}/>
+			<div className='box-img'>
+				<img src={img} alt={summary}/>
+			</div>
 			<div className='text'>
 				<div className='text-into'>
 					<div>
@@ -61,8 +68,8 @@ function Card({ img, summary, stack, descr }) {
 							{stack.map(item => <span>{item}</span>)}
 						</div>
 					</div>
-					<a className='icon-gh' href="/" aria-label="github" title="link to github">
-  						<img src={GIT_ICON} alt="" />
+					<a className='icon-gh' href={gh} aria-label="github" title="link to github">
+  						<img src={GIT_ICON} alt="GIT" />
 					</a>
 				</div>
 				<p>{descr}</p>
@@ -86,6 +93,7 @@ export function Portfolio() {
 						descr={item.descr}
 						stack={item.stack}
 						summary={item.summary}
+						gh={item.gh}
 					/>
 				))}
 			</div>

@@ -11,10 +11,12 @@ function App() {
       <Header />
       <Intro />
       <div className='container-info'>
-        <div className='container-about'>
+        <div className='wrapper'>
           <About />
         </div>
-        <Portfolio />
+        <div className='wrapper'>
+          <Portfolio />
+        </div>
         <div className='container-contact'>
           <div className='container-contact-into'/>
           <Contact />

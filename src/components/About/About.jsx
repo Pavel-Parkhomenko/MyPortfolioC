@@ -3,16 +3,44 @@ import './style.scss'
 import { HLine } from "../HLine/HLine"
 import { Bar } from '../Bar/Bar'
 
+const data = [
+	{
+		text: 'C++',
+		level: '90'
+	},
+	{
+		text: 'QT',
+		level: '80'
+	},
+	{
+		text: 'JavaScript',
+		level: '90'
+	},
+	{
+		text: 'MySQL',
+		level: '70'
+	},
+	{
+		text: 'OpenGL',
+		level: '75'
+	},
+	{
+		text: 'QML/Qt Quick',
+		level: '72'
+	}
+]
+
 export function About() {
   return(
-		<div className='box-about'>
+		<div className='box-about' id='about'>
 			<div className='bars'>
-				<Bar wBar={80}/>
-				<Bar wBar={50}/>
-				<Bar wBar={70}/>
-				<Bar wBar={20}/>
-				<Bar wBar={30}/>
-				<Bar wBar={100}/>
+			<div className='block-for-adaptive'>
+				<h2>About Me</h2>
+					<HLine />
+				</div>
+				{data.map(item => (
+					<Bar text={item.text} wBar={item.level}/>
+				))}
 			</div>
 
 			<div className="text">
@@ -20,7 +48,22 @@ export function About() {
 					<h2>About Me</h2>
 					<HLine />
 				</div>
-				<p>Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.</p>
+				<p>
+					<span className='span-block'>Специализация:</span> Системный разработчик с глубоким знанием C++, Qt и низкоуровневых концепций.
+					<span className='span-block'>Опыт:</span> Работа с памятью, файловыми дескрипторами, виртуальной памятью, контекстом процессора.
+
+					<p>
+						<span className='span-block'>Навыки:</span>
+						<ul>
+							<li>Отладка и оптимизация алгоритмов</li>
+							<li>Работа с бинарной арифметикой</li>
+							<li>Разработка кросс-платформенных GUI-приложений</li>
+						</ul>
+					</p>
+
+					<span className='span-block'>Документация:</span> Создание технических справочников и FAQ по C++, JavaScript и системному программированию.
+					<span className='span-block'>Языки:</span> Русский, английский (технический уровень)
+				</p>
 			</div>
 		</div>
 	)
