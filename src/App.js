@@ -19,7 +19,7 @@ function App() {
         </div>
         <div className='container-contact'>
           <div className='container-contact-into'/>
-          <Contact />
+          <div className='wrapper'><Contact /></div>
         </div>
       </div>
     </div>

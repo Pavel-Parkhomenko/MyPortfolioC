@@ -45,7 +45,7 @@ export function About() {
 
 			<div className="text">
 				<div>
-					<h2>About Me</h2>
+					<h2>Обо мне</h2>
 					<HLine />
 				</div>
 				<p>

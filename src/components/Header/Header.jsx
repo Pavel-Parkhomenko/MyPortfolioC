@@ -17,26 +17,22 @@ export function Header() {
   }, []);
 
   function handleBurger() {
-    console.log(activeBurger)
     setActiveBurger(!activeBurger)
   }
 
   return(
 		<div className={`box-header ${scrolled ? 'scrolled' : ''}`}>
 
-
 			<div className="menu-panel">
+        <span>&lt;Pavel Parkhomenko&gt; </span>
 
-        <div className="left">
-          <span>&lt;Pavel Parkhomenko&gt; </span>
+        {/* the menu is not be in mobile version */}
+        <div className={`right ${!activeBurger ? 'active' : ''}`}>
+          <Menu />
         </div>
 
         <div onClick={() => handleBurger()} className={`burger ${activeBurger ? 'active' : ''}`}><div/></div>
 
-        <div className='right'>
-          <Menu />
-        </div>
-        
       </div>
 		</div>
 	)

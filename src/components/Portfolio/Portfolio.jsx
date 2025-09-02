@@ -15,7 +15,7 @@ const data = [
 	{
 		id: 2,
 		img: '/img/works/crypto.png',
-		descr: "aaa a aaaaaaaaaaaaaa aaaaa aaa aa a a aa a aaaaaaa a aa a a a aa a a a a a ",
+		descr: "Веб-приложение для отслеживания цен и динамики криптовалют.",
 		stack: ["JavaScript", "React", "API", "WEB"],
 		summary: 'Crypto Tracker',
 		gh: "https://github.com/Pavel-Parkhomenko/crypto-tracker",
@@ -80,10 +80,10 @@ function Card({ img, summary, stack, descr, gh }) {
 
 export function Portfolio() {
   return(
-		<div className='box-portfolio'>
+		<div id="portfolio" className='box-portfolio'>
 			<div className='box-text'>
-				<h2>Portfolio</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<h2>Портфолио</h2>
+				<p>Данные проекты созданы и даже работают!</p>
 				<HLine />
 			</div>
 			<div className='box-card'>

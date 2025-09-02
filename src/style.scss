@@ -11,7 +11,7 @@
 .container-contact {
 	width: 100%;
 	margin: 0;
-	background: url('./img/earth.jpg');
+	background: url('./img/img2.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -21,16 +21,19 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
 
+	.wrapper {
+		z-index: 2;
+	}
+	
 	.container-contact-into {
 		background-color: #0078ff;
 		position: absolute;
 		top: 0;
 		left: 0;
 		padding: 0;
-		height: 100%;
-		width: 100%;
+		height: inherit;
+		width: inherit;
 		opacity: .7;
 	}
 }
@@ -39,11 +42,11 @@
 	width: 60%;
 
 	@media (max-width: $br-lg) {
-    	width: 70%;
+    	width: 75%;
 	}
 
 	@media (max-width: $br-md) {
-    	width: 80%;
+    	width: 85%;
 	}
 
 	@media (max-width: $br-sm) {

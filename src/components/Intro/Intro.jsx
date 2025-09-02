@@ -12,13 +12,15 @@ export function Intro() {
 			<div id="stars3" />
 			<div className="box-text">
 				<div>
-					<h1 className="h1">Hello, I am Pavel</h1>
+					<h1 className="h1">Привет, я Павел</h1>
 					<div className='type'>
 						<ReactTyped
 							strings={[
 								"Back End Developer",
 								"Software Engineer",
-								"Front End Developer",
+								"C++ Developer",
+								"Qt Developer",
+								"Embedded Systems Engineer"
 							]}
 							typeSpeed={80}
 							backDelay={1100}
@@ -26,7 +28,7 @@ export function Intro() {
 							loop
 							/>
 					</div>
-					<Button text={'My CV'}/>
+					<Button text={'Моё CV'}/>
 				</div>
 			</div>
 		</div>
