@@ -4,12 +4,19 @@ import './style.scss'
 
 export function Header() {
 
-	const [scrolled, setScrolled] = useState(false);
+	const [scrolled, setScrolled] = useState('');
   const [activeBurger, setActiveBurger] = useState(false)
 
 	useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 10); 
+      if(window.scrollY > 10) {
+        setScrolled('scrolled')
+      }
+
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        setScrolled('bottom-scrolled'); 
+      }
     };
 
     window.addEventListener('scroll', onScroll);
@@ -21,7 +28,7 @@ export function Header() {
   }
 
   return(
-		<div className={`box-header ${scrolled ? 'scrolled' : ''}`}>
+		<div className={`box-header ${scrolled}`}>
 
 			<div className="menu-panel">
         <span>&lt;Pavel Parkhomenko&gt; </span>

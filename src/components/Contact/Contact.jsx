@@ -51,7 +51,7 @@ export function Contact() {
       <div className='right-panel'>
         <h2>Контакт</h2>
         <HLine />
-        <p>Хотите обсудить идею, задать вопрос или просто поздороваться? Не стесняйтесь — я всегда рад новым сообщениям. Укажите, от кого письмо, и нажмите «отправить». Всё просто.</p>
+        <p>Хотите обсудить идею, задать вопрос или просто поздороваться - я всегда рад новым сообщениям.</p>
         <div>
           <a href="https://www.linkedin.com/in/pavel-parkhomenko-bb9810232/" aria-label="linkedin" title="link to linkedin">
             <img src={LINKEDIN} alt='linkedin'/>

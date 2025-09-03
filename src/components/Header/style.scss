@@ -18,6 +18,12 @@
         color: black;
     }
 
+    &.bottom-scrolled {
+        background-color: white;
+        color: $primary-color;
+        height: 60px;
+    }
+
     .menu-panel {
         width: 60%;
         display: flex;
