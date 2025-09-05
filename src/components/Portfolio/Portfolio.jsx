@@ -37,7 +37,7 @@ const data = [
 	},
 	{
 		id: 5,
-		img: starWars,
+		img: transcendentalEquation,
 		descr: "Данное приложение позволяет решать трансцендентные уравнения на заданном диапазоне данных.",
 		stack: ["C++", "C#", "Chart", "Assembler", "DLL"],
 		summary: 'Transcendental Equation',
@@ -45,7 +45,7 @@ const data = [
 	},
 	{
 		id: 6,
-		img: transcendentalEquation,
+		img: treeApp,
 		descr: "В этом приложении вы можете создать, отобразить и выполнить некоторые операции над двоичном дереве.",
 		stack: ["C++", "QT", "Linux/Windows"],
 		summary: 'Tree App',
@@ -53,7 +53,7 @@ const data = [
 	},
 	{
 		id: 7,
-		img: treeApp,
+		img: starWars,
 		descr: "Вы печаете текст, а он очень сильно хочет быть похожим на титры Star Wars.",
 		stack: ["C++", "QT", "Linux/Windows"],
 		summary: 'Star Wars',
