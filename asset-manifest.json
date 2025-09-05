@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyPortfolioC/static/css/main.427be78b.css",
-    "main.js": "/MyPortfolioC/static/js/main.d962bb1e.js",
+    "main.js": "/MyPortfolioC/static/js/main.142e4d58.js",
     "static/media/star-wars.png": "/MyPortfolioC/static/media/star-wars.4f09bdf22f27892d2bba.png",
     "static/media/desktop_icon_game.png": "/MyPortfolioC/static/media/desktop_icon_game.76c86b40b53f462ba6a3.png",
     "static/media/img2.jpg": "/MyPortfolioC/static/media/img2.6b15789bd00fca9bc0ae.jpg",
@@ -15,10 +15,10 @@
     "static/media/linkedin.svg": "/MyPortfolioC/static/media/linkedin.818f7268e580dfb23c79dac4bff314ba.svg",
     "index.html": "/MyPortfolioC/index.html",
     "main.427be78b.css.map": "/MyPortfolioC/static/css/main.427be78b.css.map",
-    "main.d962bb1e.js.map": "/MyPortfolioC/static/js/main.d962bb1e.js.map"
+    "main.142e4d58.js.map": "/MyPortfolioC/static/js/main.142e4d58.js.map"
   },
   "entrypoints": [
     "static/css/main.427be78b.css",
-    "static/js/main.d962bb1e.js"
+    "static/js/main.142e4d58.js"
   ]
 }
