@@ -2,7 +2,7 @@
 
 .box-portfolio {
 	margin-top: 84px;
-
+	background-color: white;
 	.box-text {
 		display: flex;
 		justify-content: center;
@@ -21,6 +21,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		
 
 		.card {
 			width: 30%;
@@ -34,6 +35,10 @@
 
 			.box-img {
 				height: 300px;
+				
+				@media (max-width: $br-md) {
+					overflow: hidden;
+				}
 
 				img {
 					width: 100%;
@@ -42,7 +47,7 @@
 	
 					&:hover {
 						transform: scale(1.2);
-
+						
 					}
 				}
 			}

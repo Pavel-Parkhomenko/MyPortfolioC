@@ -26,9 +26,10 @@ export function Contact() {
   }
 
   const handleClick = (event) => {
-    const body = `${form.body || "Как дела?"}\n\n\nСообщение отправил(а): ${form.from}`
+    console.log('click')
+    const body = `${form.body || "Как дела?"}\n\n\nСообщение отправил(а): ${form.from || 'Твой друг'}`
     setMailLink(`
-      mailto:pawelparhomenko@gmail.com?subject=${encodeURIComponent(form.subject) || 'Привет, Павел!'}&body=${encodeURIComponent(body)}
+      mailto:pawelparhomenko@gmail.com?subject=${encodeURIComponent(form.subject || "Это интересно.") || 'Привет, Павел!'}&body=${encodeURIComponent(body)}
     `)
   }
 
@@ -43,8 +44,8 @@ export function Contact() {
           <input placeholder="Ваше имя" onChange={handleFrom} />
           <input placeholder="Тема" onChange={handleSubject} />
           <textarea placeholder="Сообщение" onChange={handleBody} />
-          <a ref={ref} href={mailLink} onClick={(e) => e.preventDefault()} style={{cursor: 'default'}}>
-            <Button text={'Отправить'} handleClick={(event) => handleClick(event)} />
+          <a ref={ref} href={mailLink} onClick={(event) => handleClick(event)} style={{cursor: 'default', width: '50%'}}>
+            <Button text={'Отправить'} handleClick={() => {}} />
           </a>
         </div>
       </div>

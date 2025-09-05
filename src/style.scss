@@ -1,11 +1,25 @@
 @use 'src/variables' as *;
 
+.vector__ {
+	position: absolute;
+	width: 100%;
+	opacity: 0.1;
+	
+	@media (max-width: $br-md) {
+		opacity: 0.3;
+	}
+}
+
+.v1 {top: -35px;}
+.v2 {top: 100px;}
+
 .container-info {
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	background-color: white;
 }
 
 .container-contact {
@@ -21,9 +35,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	// padding-top: 10px;
-	// padding-bottom: 10px;
-	// box-sizing: border-box;
 
 	.wrapper {
 		z-index: 2;
