@@ -1,18 +1,24 @@
 {
   "files": {
     "main.css": "/MyPortfolioC/static/css/main.427be78b.css",
-    "main.js": "/MyPortfolioC/static/js/main.2a1c1685.js",
+    "main.js": "/MyPortfolioC/static/js/main.d962bb1e.js",
+    "static/media/star-wars.png": "/MyPortfolioC/static/media/star-wars.4f09bdf22f27892d2bba.png",
+    "static/media/desktop_icon_game.png": "/MyPortfolioC/static/media/desktop_icon_game.76c86b40b53f462ba6a3.png",
     "static/media/img2.jpg": "/MyPortfolioC/static/media/img2.6b15789bd00fca9bc0ae.jpg",
+    "static/media/crypto.png": "/MyPortfolioC/static/media/crypto.31637405d60ab38d6194.png",
+    "static/media/tree_app.png": "/MyPortfolioC/static/media/tree_app.b795345bd8b3fbe055b3.png",
+    "static/media/transcendental_equation.png": "/MyPortfolioC/static/media/transcendental_equation.e03d8d5e2d10aad3df14.png",
+    "static/media/activation-linux.png": "/MyPortfolioC/static/media/activation-linux.fe5b68cf39f08042a0a2.png",
     "static/media/icon-git.svg": "/MyPortfolioC/static/media/icon-git.895050b20cdc3aefa3177ef8508b789b.svg",
     "static/media/github.svg": "/MyPortfolioC/static/media/github.e35c71752b296aa276f44b3be062ef25.svg",
     "static/media/telegram.svg": "/MyPortfolioC/static/media/telegram.3295c7bd9bf1124c19a978b2c44e09c8.svg",
     "static/media/linkedin.svg": "/MyPortfolioC/static/media/linkedin.818f7268e580dfb23c79dac4bff314ba.svg",
     "index.html": "/MyPortfolioC/index.html",
     "main.427be78b.css.map": "/MyPortfolioC/static/css/main.427be78b.css.map",
-    "main.2a1c1685.js.map": "/MyPortfolioC/static/js/main.2a1c1685.js.map"
+    "main.d962bb1e.js.map": "/MyPortfolioC/static/js/main.d962bb1e.js.map"
   },
   "entrypoints": [
     "static/css/main.427be78b.css",
-    "static/js/main.2a1c1685.js"
+    "static/js/main.d962bb1e.js"
   ]
 }
