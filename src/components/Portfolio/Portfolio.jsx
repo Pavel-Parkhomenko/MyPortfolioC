@@ -3,10 +3,17 @@ import './style.scss'
 import { HLine } from '../HLine/HLine.jsx'
 import GIT_ICON from '../../img/icon-git.svg'
 
+import activationLinux from '../../img/works/activation-linux.png'
+import crypto from '../../img/works/crypto.png'
+import desctopIconGame from '../../img/works/desktop_icon_game.png'
+import starWars from '../../img/works/star-wars.png'
+import transcendentalEquation from '../../img/works/transcendental_equation.png'
+import treeApp from '../../img/works/tree_app.png'
+
 const data = [
 	{
 		id: 1,
-		img: '/img/works/activation-linux.png',
+		img: activationLinux,
 		descr: "Сообщение о том, что вам необходимо активировать Linux.",
 		stack: ["C++", "QT", "Linux"],
 		summary: 'Activation Linux',
@@ -14,7 +21,7 @@ const data = [
 	},
 	{
 		id: 2,
-		img: '/img/works/crypto.png',
+		img: crypto,
 		descr: "Веб-приложение для отслеживания цен и динамики криптовалют.",
 		stack: ["JavaScript", "React", "API", "WEB"],
 		summary: 'Crypto Tracker',
@@ -22,7 +29,7 @@ const data = [
 	},
 	{
 		id: 3,
-		img: '/img/works/desktop_icon_game.png',
+		img: desctopIconGame,
 		descr: "Мини-игра, в которой вам нужно будет вернуть значки на рабочем столе в их первоначальное положение.",
 		stack: ["C++", "QT", "Linux"],
 		summary: 'Desktop Icon Game',
@@ -30,7 +37,7 @@ const data = [
 	},
 	{
 		id: 5,
-		img: '/img/works/transcendental_equation.png',
+		img: starWars,
 		descr: "Данное приложение позволяет решать трансцендентные уравнения на заданном диапазоне данных.",
 		stack: ["C++", "C#", "Chart", "Assembler", "DLL"],
 		summary: 'Transcendental Equation',
@@ -38,7 +45,7 @@ const data = [
 	},
 	{
 		id: 6,
-		img: '/img/works/tree_app.png',
+		img: transcendentalEquation,
 		descr: "В этом приложении вы можете создать, отобразить и выполнить некоторые операции над двоичном дереве.",
 		stack: ["C++", "QT", "Linux/Windows"],
 		summary: 'Tree App',
@@ -46,7 +53,7 @@ const data = [
 	},
 	{
 		id: 7,
-		img: '/img/works/star-wars.png',
+		img: treeApp,
 		descr: "Вы печаете текст, а он очень сильно хочет быть похожим на титры Star Wars.",
 		stack: ["C++", "QT", "Linux/Windows"],
 		summary: 'Star Wars',
@@ -87,8 +94,9 @@ export function Portfolio() {
 				<HLine />
 			</div>
 			<div className='box-card'>
-				{data.map(item => (
+				{data.map((item, ind) => (
 					<Card 
+						id={item.id}
 						img={item.img}
 						descr={item.descr}
 						stack={item.stack}
